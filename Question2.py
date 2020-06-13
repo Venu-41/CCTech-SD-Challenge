@@ -40,7 +40,7 @@ rays.loc[:,'x_inter'] = np.zeros(len(rays));rays.loc[:,'y_inter'] = np.zeros(len
 # Loop for Light rays from the source point 'SO'
 for i,j in enumerate(np.arange(-90,5,95/(NOR))):
     IPS = [(1000,1000)] # Initilialize some Intersection point's
-    b = rayEnds(SO,j,10)
+    b = rayEnds(SO,j,15)
     Line1 = line(SO,b)
     P1 = Point(SO[0],SO[1]);Q1 = Point(b[0],b[1])  
     for k,l in enumerate(Edges):   #loop over the edges
